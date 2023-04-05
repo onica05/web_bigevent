@@ -4,27 +4,27 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    background: url('../images/login_bg.jpg') no-repeat center;
     background-size: cover;
 }
 
 .loginAndRegBox {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 400px;
     height: 310px;
     background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); /* css3*/
 }
 
 .title-box {
     height: 60px;
-    background: url('/assets/images/login_title.png') no-repeat center;
+    background: url('..//images/login_title.png') no-repeat center;
 }
 
-.hide {
-    display: none;
+.reg-box{
+	display: none;
 }
 
 .layui-form {
@@ -40,13 +40,13 @@ body {
 .layui-form-item {
     position: relative;
 }
-
+/* 使用于 定位图标 */
 .layui-icon {
     position: absolute;
     left: 10px;
     top: 10px;
 }
-
+/* 表单样式  为了给图标空出一个空位*/
 .layui-input {
     padding-left: 32px!important;
 }
