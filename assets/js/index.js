@@ -28,11 +28,19 @@ function getUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg(res.message) /* layer.msg()是提示框（和login那个一样）*/
             }
+		
 			/* 调用这个函数 渲染用户的头像 */
             renderAvatar(res.data) /* 用户的基本信息*/
         }
     })
 }
+
+  //   // 注册消息事件监听，接受子元素给的数据
+  //   window.addEventListener('message', (e) => {
+  //       console.log(e.data);
+		// getUserInfo();
+  //   }, false);
+
 /* 渲染头像 */
 function renderAvatar(user) {
     // 欢迎用户
@@ -54,7 +62,7 @@ function renderAvatar(user) {
     }
 }
 
-function setNavSelected(origin, current) {
+/* function setNavSelected(origin, current) {
     $(origin).addClass('layui-this')
     $(current).removeClass('layui-this')
-}
+} */

@@ -9,9 +9,9 @@ body {
     padding: 15px;
 }
 
+/* 这下面的样式都是cropper内的 */
 
 /* 设置卡片主体区域的宽度 */
-
 .layui-card-body {
     width: 500px;
 }
