@@ -12,14 +12,15 @@ body {
 
 /* 封面容器的样式 */
 
-.cover-box {
+.cropper-box {
     display: flex;
 }
 
 
 /* 左侧裁剪区域的样式 */
 
-.cover-left {
+.cropper-left,
+#iamge {
     width: 400px;
     height: 280px;
     overflow: hidden;
@@ -29,7 +30,7 @@ body {
 
 /* 右侧盒子的样式 */
 
-.cover-right {
+.cropper-right {
     display: flex;
     flex-direction: column;
     align-items: center;
